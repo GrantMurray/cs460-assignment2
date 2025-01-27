@@ -1,2 +1,2 @@
-<h2>How to Compile<h2>
-* Run make inside src
+## How to Compile
+* Run make inside src directory
