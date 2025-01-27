@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main(int argc, char const** argv) {
-  printf("Hello worlds!\n"); 
+  printf("Project is done!\n"); 
 
   return 0;
 }
