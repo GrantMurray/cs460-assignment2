@@ -1,14 +1,14 @@
 CC := gcc
 CFLAGS := -Wall
-EXEC := output
+LDLIBS := -lpthreads
+EXEC := micro-schedule
 OBJS := main.o 
 
-output: ${OBJS}
-	${CC} ${CFLAGS} -o output ${OBJS}
+${EXEC}: ${OBJS}
+	${CC} ${CFLAGS} -o ${EXEC} ${OBJS}
 
 main.o: main.c 
-	${CC} ${CFLAGS} -c main.c 
+	${CC} ${CFLAGS} -c main.c ${LDLIBS} 
 
 clean: 
 	rm ${EXEC} ${OBJS} 
-
